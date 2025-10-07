@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Silk Cord Set",
+    "price": 2499,
+    "description": "A luxurious silk cord set featuring intricate detailing. Perfect for evening events and special occasions. The coordinated top and bottom create a sophisticated ensemble.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 2,
+    "name": "Fancy Floral Dress",
+    "price": 1899,
+    "description": "A stunning fancy dress with beautiful floral patterns. Ideal for parties and celebrations. Features a flattering fit and vibrant colors.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Formal"
+  },
+  {
+    "id": 3,
+    "name": "Ready Made Cotton Kurti",
+    "price": 999,
+    "description": "Comfortable ready-made cotton kurti perfect for daily wear. Easy to style and maintain. Features breathable fabric and elegant design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 4,
+    "name": "Fancy Cord Embroidered Set",
+    "price": 3299,
+    "description": "Exquisite fancy cord set with delicate embroidery work. Perfect for weddings and formal gatherings. Showcases traditional craftsmanship with modern style.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Formal"
+  },
+  {
+    "id": 5,
+    "name": "Casual Cord Set",
+    "price": 1599,
+    "description": "Comfortable and stylish cord set for everyday wear. Features soft fabric and relaxed fit. Perfect for casual outings and weekend brunches.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Casual"
+  },
+  {
+    "id": 6,
+    "name": "Designer Fancy Gown",
+    "price": 4599,
+    "description": "Breathtaking designer fancy gown with intricate detailing. Ideal for grand celebrations and formal events. Features premium fabric and elegant silhouette.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Formal"
+  },
+  {
+    "id": 7,
+    "name": "Ready Made Palazzo Set",
+    "price": 1299,
+    "description": "Trendy ready-made palazzo set with matching top. Perfect for casual and semi-formal occasions. Comfortable and easy to wear.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 8,
+    "name": "Fancy Cord Party Wear",
+    "price": 2899,
+    "description": "Glamorous fancy cord party wear with shimmering details. Perfect for cocktail parties and evening events. Features contemporary design with traditional touch.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Evening"
+  },
+  {
+    "id": 9,
+    "name": "Printed Cord Set",
+    "price": 1799,
+    "description": "Vibrant printed cord set with modern patterns. Ideal for casual gatherings and day events. Features comfortable fit and eye-catching design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Casual"
+  },
+  {
+    "id": 10,
+    "name": "Fancy Sequin Dress",
+    "price": 3499,
+    "description": "Dazzling fancy dress adorned with sequins. Perfect for parties and celebrations. Features stunning sparkle and flattering fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  },
+  {
+    "id": 11,
+    "name": "Ready Made Anarkali Suit",
+    "price": 2199,
+    "description": "Beautiful ready-made Anarkali suit with elegant design. Perfect for festive occasions and celebrations. Features flowing silhouette and intricate work.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Formal"
+  },
+  {
+    "id": 12,
+    "name": "Fancy Cord Lehenga Set",
+    "price": 5999,
+    "description": "Magnificent fancy cord lehenga set with heavy embellishments. Ideal for weddings and grand celebrations. Features traditional craftsmanship and luxurious fabric.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Formal"
+  },
+  {
+    "id": 13,
+    "name": "Velvet Cord Set",
+    "price": 2699,
+    "description": "Luxurious velvet cord set perfect for winter occasions. Features rich texture and elegant design. Ideal for evening events and parties.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 14,
+    "name": "Fancy Maxi Dress",
+    "price": 2299,
+    "description": "Elegant fancy maxi dress with flowing silhouette. Perfect for formal dinners and evening events. Features sophisticated design and comfortable fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  },
+  {
+    "id": 15,
+    "name": "Ready Made Salwar Suit",
+    "price": 1499,
+    "description": "Classic ready-made salwar suit for everyday elegance. Features comfortable fabric and timeless design. Perfect for casual and semi-formal occasions.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 16,
+    "name": "Fancy Cord Sharara Set",
+    "price": 4299,
+    "description": "Stunning fancy cord sharara set with intricate embroidery. Ideal for weddings and festive celebrations. Features traditional elegance with contemporary flair.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Formal"
+  },
+  {
+    "id": 17,
+    "name": "Georgette Cord Set",
+    "price": 1999,
+    "description": "Graceful georgette cord set with delicate draping. Perfect for parties and evening gatherings. Features lightweight fabric and elegant design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 18,
+    "name": "Fancy Cocktail Dress",
+    "price": 3799,
+    "description": "Chic fancy cocktail dress with modern design. Perfect for parties and social events. Features flattering cut and stylish details.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  },
+  {
+    "id": 19,
+    "name": "Ready Made Churidar Set",
+    "price": 1399,
+    "description": "Comfortable ready-made churidar set for daily wear. Features easy maintenance and classic style. Perfect for casual outings and work.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 20,
+    "name": "Fancy Cord Jacket Set",
+    "price": 3599,
+    "description": "Trendy fancy cord jacket set with contemporary design. Ideal for fashion-forward occasions. Features unique styling and premium quality.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Evening"
+  },
+  {
+    "id": 21,
+    "name": "Floral Cord Set",
+    "price": 1899,
+    "description": "Beautiful floral cord set with vibrant prints. Perfect for spring and summer occasions. Features comfortable fit and cheerful design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Casual"
+  },
+  {
+    "id": 22,
+    "name": "Fancy Evening Gown",
+    "price": 5499,
+    "description": "Breathtaking fancy evening gown with luxurious details. Perfect for galas and formal events. Features elegant silhouette and premium fabric.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Formal"
+  },
+  {
+    "id": 23,
+    "name": "Ready Made Straight Suit",
+    "price": 1699,
+    "description": "Elegant ready-made straight suit with modern cut. Perfect for office wear and casual events. Features comfortable fabric and sleek design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 24,
+    "name": "Fancy Cord Gharara Set",
+    "price": 4799,
+    "description": "Exquisite fancy cord gharara set with traditional embroidery. Ideal for weddings and festive occasions. Features rich detailing and elegant design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Formal"
+  },
+  {
+    "id": 25,
+    "name": "Chiffon Cord Set",
+    "price": 2199,
+    "description": "Delicate chiffon cord set with flowing fabric. Perfect for evening parties and celebrations. Features lightweight material and graceful design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 26,
+    "name": "Fancy Party Dress",
+    "price": 2999,
+    "description": "Stunning fancy party dress with eye-catching details. Perfect for celebrations and social gatherings. Features modern design and flattering fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  },
+  {
+    "id": 27,
+    "name": "Ready Made Patiala Suit",
+    "price": 1599,
+    "description": "Traditional ready-made Patiala suit with comfortable fit. Perfect for casual and festive occasions. Features classic style and easy wear.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 28,
+    "name": "Fancy Cord Saree Gown",
+    "price": 5299,
+    "description": "Magnificent fancy cord saree gown with fusion design. Ideal for grand celebrations and weddings. Features innovative styling and luxurious fabric.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Formal"
+  },
+  {
+    "id": 29,
+    "name": "Embroidered Cord Set",
+    "price": 2499,
+    "description": "Beautiful embroidered cord set with intricate work. Perfect for special occasions and parties. Features detailed craftsmanship and elegant design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 30,
+    "name": "Fancy Midi Dress",
+    "price": 2199,
+    "description": "Elegant fancy midi dress with contemporary style. Perfect for brunches and day events. Features comfortable fit and chic design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Casual"
+  },
+  {
+    "id": 31,
+    "name": "Ready Made Kurti Set",
+    "price": 1199,
+    "description": "Versatile ready-made kurti set for everyday wear. Features comfortable fabric and practical design. Perfect for casual outings and daily activities.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Casual"
+  },
+  {
+    "id": 32,
+    "name": "Fancy Cord Cape Set",
+    "price": 3999,
+    "description": "Trendy fancy cord cape set with modern silhouette. Ideal for fashion events and parties. Features unique design and premium quality.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Evening"
+  },
+  {
+    "id": 33,
+    "name": "Silk Cord Set",
+    "price": 2899,
+    "description": "Luxurious silk cord set with rich texture. Perfect for evening events and celebrations. Features premium fabric and elegant styling.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 34,
+    "name": "Fancy Wrap Dress",
+    "price": 2599,
+    "description": "Flattering fancy wrap dress with adjustable fit. Perfect for various occasions and body types. Features versatile design and comfortable wear.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Casual"
+  },
+  {
+    "id": 35,
+    "name": "Ready Made Dhoti Suit",
+    "price": 1799,
+    "description": "Stylish ready-made dhoti suit with contemporary twist. Perfect for festive occasions and parties. Features comfortable fit and trendy design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Evening"
+  },
+  {
+    "id": 36,
+    "name": "Fancy Cord Palazzo Set",
+    "price": 3299,
+    "description": "Chic fancy cord palazzo set with elegant details. Ideal for parties and evening events. Features flowing silhouette and sophisticated design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Evening"
+  },
+  {
+    "id": 37,
+    "name": "Linen Cord Set",
+    "price": 1699,
+    "description": "Comfortable linen cord set perfect for summer. Features breathable fabric and relaxed fit. Ideal for casual outings and day events.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Casual"
+  },
+  {
+    "id": 38,
+    "name": "Fancy Bodycon Dress",
+    "price": 2799,
+    "description": "Sleek fancy bodycon dress with figure-hugging fit. Perfect for parties and night events. Features modern design and stretchy fabric.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  },
+  {
+    "id": 39,
+    "name": "Ready Made Gown",
+    "price": 2499,
+    "description": "Elegant ready-made gown for special occasions. Features flowing silhouette and beautiful design. Perfect for weddings and formal events.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Formal"
+  },
+  {
+    "id": 40,
+    "name": "Fancy Cord Crop Top Set",
+    "price": 2699,
+    "description": "Trendy fancy cord crop top set with modern styling. Ideal for parties and casual events. Features contemporary design and comfortable fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Casual"
+  },
+  {
+    "id": 41,
+    "name": "Cotton Cord Set",
+    "price": 1499,
+    "description": "Comfortable cotton cord set for everyday wear. Features soft fabric and easy maintenance. Perfect for casual occasions and daily activities.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Casual"
+  },
+  {
+    "id": 42,
+    "name": "Fancy A-Line Dress",
+    "price": 2399,
+    "description": "Classic fancy A-line dress with flattering silhouette. Perfect for various occasions and body types. Features timeless design and elegant style.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  },
+  {
+    "id": 43,
+    "name": "Ready Made Sharara Suit",
+    "price": 2999,
+    "description": "Beautiful ready-made sharara suit with traditional charm. Perfect for weddings and festive occasions. Features elegant design and comfortable fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Formal"
+  },
+  {
+    "id": 44,
+    "name": "Fancy Cord Skirt Set",
+    "price": 2899,
+    "description": "Stylish fancy cord skirt set with coordinated top. Ideal for parties and evening events. Features modern design and flattering fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Evening"
+  },
+  {
+    "id": 45,
+    "name": "Rayon Cord Set",
+    "price": 1599,
+    "description": "Comfortable rayon cord set with flowing fabric. Perfect for casual and semi-formal occasions. Features easy drape and elegant design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Casual"
+  },
+  {
+    "id": 46,
+    "name": "Fancy Shift Dress",
+    "price": 2199,
+    "description": "Chic fancy shift dress with relaxed fit. Perfect for casual outings and day events. Features comfortable design and modern style.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Casual"
+  },
+  {
+    "id": 47,
+    "name": "Ready Made Lehenga Choli",
+    "price": 3999,
+    "description": "Stunning ready-made lehenga choli for special occasions. Features beautiful embellishments and traditional design. Perfect for weddings and celebrations.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Ready Made",
+    "occasion": "Formal"
+  },
+  {
+    "id": 48,
+    "name": "Fancy Cord Jumpsuit",
+    "price": 3199,
+    "description": "Modern fancy cord jumpsuit with contemporary styling. Ideal for parties and fashion events. Features unique design and comfortable fit.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy Cord",
+    "occasion": "Evening"
+  },
+  {
+    "id": 49,
+    "name": "Satin Cord Set",
+    "price": 2399,
+    "description": "Luxurious satin cord set with smooth texture. Perfect for evening events and parties. Features elegant sheen and sophisticated design.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Cord Set",
+    "occasion": "Evening"
+  },
+  {
+    "id": 50,
+    "name": "Fancy Peplum Dress",
+    "price": 2499,
+    "description": "Trendy fancy peplum dress with flattering silhouette. Perfect for parties and celebrations. Features modern design and feminine style.",
+    "image": "https://drive.google.com/file/d/1m48ItyHfv2lPRxkNMFoXaX334VpMqkCR/view?usp=drive_link",
+    "category": "Fancy",
+    "occasion": "Evening"
+  }
+]
