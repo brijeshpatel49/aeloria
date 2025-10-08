@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 export default function AdminPage() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function AdminPage() {
   const [showModal, setShowModal] = useState(false);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     checkAuth();
@@ -53,34 +55,48 @@ export default function AdminPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const url = editingId ? `/api/dresses/${editingId}` : "/api/dresses";
-    const method = editingId ? "PUT" : "POST";
+    // Prevent multiple submissions
+    if (submitting) return;
     
-    // Prepare data - description will be auto-generated on server if empty
-    const dressData = {
-      ...formData,
-      price: parseFloat(formData.price),
-    };
+    setSubmitting(true);
+    const loadingToast = toast.loading(editingId ? "Updating dress..." : "Adding dress...");
     
-    const res = await fetch(url, {
-      method,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(dressData),
-    });
-    
-    const data = await res.json();
-    if (data.success) {
-      alert(editingId ? "Dress updated!" : "Dress added!");
-      setShowModal(false);
-      setFormData({
-        id: "",
-        name: "",
-        price: "",
-        image: "",
-        category: "Cord Set",
+    try {
+      const url = editingId ? `/api/dresses/${editingId}` : "/api/dresses";
+      const method = editingId ? "PUT" : "POST";
+      
+      // Prepare data - description will be auto-generated on server if empty
+      const dressData = {
+        ...formData,
+        price: parseFloat(formData.price),
+      };
+      
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dressData),
       });
-      setEditingId(null);
-      fetchDresses();
+      
+      const data = await res.json();
+      if (data.success) {
+        toast.success(editingId ? "Dress updated successfully! ✨" : "Dress added successfully! 🎉", { id: loadingToast });
+        setShowModal(false);
+        setFormData({
+          id: "",
+          name: "",
+          price: "",
+          image: "",
+          category: "Cord Set",
+        });
+        setEditingId(null);
+        fetchDresses();
+      } else {
+        toast.error(data.error || "Failed to save dress", { id: loadingToast });
+      }
+    } catch (error) {
+      toast.error("Something went wrong", { id: loadingToast });
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -97,13 +113,23 @@ export default function AdminPage() {
   };
 
   const handleDelete = async (id) => {
-    if (!confirm("Are you sure you want to delete this dress?")) return;
+    // Use toast for confirmation
+    const confirmDelete = window.confirm("Are you sure you want to delete this dress?");
+    if (!confirmDelete) return;
     
-    const res = await fetch(`/api/dresses/${id}`, { method: "DELETE" });
-    const data = await res.json();
-    if (data.success) {
-      alert("Dress deleted!");
-      fetchDresses();
+    const loadingToast = toast.loading("Deleting dress...");
+    
+    try {
+      const res = await fetch(`/api/dresses/${id}`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        toast.success("Dress deleted successfully! 🗑️", { id: loadingToast });
+        fetchDresses();
+      } else {
+        toast.error(data.error || "Failed to delete dress", { id: loadingToast });
+      }
+    } catch (error) {
+      toast.error("Something went wrong", { id: loadingToast });
     }
   };
 
@@ -259,9 +285,10 @@ export default function AdminPage() {
               <div className="flex gap-2 pt-4 border-t border-gray-200">
                 <button
                   type="submit"
-                  className="flex-1 bg-accent text-white px-6 py-3 rounded-full hover:bg-darkPink transition font-medium"
+                  disabled={submitting}
+                  className="flex-1 bg-accent text-white px-6 py-3 rounded-full hover:bg-darkPink transition font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {editingId ? "Update Dress" : "Add Dress"}
+                  {submitting ? "Saving..." : editingId ? "Update Dress" : "Add Dress"}
                 </button>
                 <button
                   type="button"

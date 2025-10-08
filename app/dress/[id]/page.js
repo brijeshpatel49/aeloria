@@ -7,6 +7,10 @@ import FavoriteButton from "@/components/FavoriteButton";
 import AddToCartButton from "@/components/AddToCartButton";
 import ShareButton from "@/components/ShareButton";
 
+// Disable caching to always show latest dress data
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Helper function to convert Google Drive URLs
 function convertGoogleDriveUrl(url) {
   if (!url) return url;

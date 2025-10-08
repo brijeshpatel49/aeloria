@@ -8,10 +8,14 @@ export async function GET() {
     const db = client.db("aeloria");
 
     // Try 'clothes' collection first, then 'dresses'
-    let dresses = await db.collection("clothes").find({}).toArray();
+    let dresses = await db.collection("clothes")
+      .find({})
+      .toArray();
 
     if (dresses.length === 0) {
-      dresses = await db.collection("dresses").find({}).toArray();
+      dresses = await db.collection("dresses")
+        .find({})
+        .toArray();
     }
 
     // Convert all Google Drive URLs to direct links
@@ -19,6 +23,31 @@ export async function GET() {
       ...dress,
       image: convertGoogleDriveUrl(dress.image)
     }));
+
+    // Sort by custom id field (numeric if possible), then by createdAt
+    dresses.sort((a, b) => {
+      // If both have id field
+      if (a.id && b.id) {
+        // Try to parse as numbers
+        const aNum = parseInt(a.id);
+        const bNum = parseInt(b.id);
+        
+        // If both are valid numbers, sort numerically
+        if (!isNaN(aNum) && !isNaN(bNum)) {
+          return aNum - bNum;
+        }
+        
+        // Otherwise sort alphabetically
+        return String(a.id).localeCompare(String(b.id));
+      }
+      
+      // If only one has id, prioritize it
+      if (a.id) return -1;
+      if (b.id) return 1;
+      
+      // If neither has id, sort by createdAt (newest first)
+      return new Date(b.createdAt) - new Date(a.createdAt);
+    });
 
     return NextResponse.json({ success: true, dresses });
   } catch (error) {
@@ -35,6 +64,17 @@ export async function POST(request) {
     const body = await request.json();
     const client = await clientPromise;
     const db = client.db("aeloria");
+
+    // Check if ID already exists (if provided)
+    if (body.id) {
+      const existing = await db.collection("clothes").findOne({ id: body.id });
+      if (existing) {
+        return NextResponse.json(
+          { success: false, error: `Dress with ID "${body.id}" already exists` },
+          { status: 400 }
+        );
+      }
+    }
 
     // Auto-generate description if not provided
     let description = body.description;
