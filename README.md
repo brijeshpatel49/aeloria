@@ -1,94 +1,147 @@
-# Aeloria - Women's Dress Boutique
+<div align="center">
+  <img src="public/logo2.png" alt="Aeloria Logo" width="200"/>
+  
+  # Aeloria
+  ### Where Grace Meets Modern Elegance
+  
+  *Wear Extraordinary*
+</div>
 
-*Elegance, Redefined.*
+---
 
-A modern, elegant online boutique built with Next.js and MongoDB, featuring a curated collection of timeless dresses.
+## About Aeloria
 
-## Features
+Aeloria is a premium women's fashion boutique offering elegant dresses, cord sets, and ethnic wear. Shop our curated collection featuring Cord Sets, Fancy Dresses, Fancy Cord, and Ready Made outfits.
 
-- 🎨 Elegant, minimal design with Tailwind CSS
-- 📱 Fully responsive layout
-- 🛍️ Product catalog with detailed dress pages
-- 💬 WhatsApp integration for orders
-- 🗄️ MongoDB ready for product management
-- ⚡ Built with Next.js 14 App Router
+## Technology Stack
 
-## Getting Started
+### Core Framework
+- **Next.js 14** - React framework with App Router
+  - Server-side rendering (SSR) for SEO
+  - Dynamic routing for product pages
+  - API routes for serverless backend
+  - Image optimization with automatic WebP/AVIF conversion
+  - Force dynamic rendering for real-time updates
 
-1. Install dependencies:
-```bash
-npm install
-```
+### Frontend Technologies
+- **React 18** - Component-based UI library
+  - Hooks (useState, useEffect, useContext)
+  - Client and server components
+  - Suspense and loading states
+- **Tailwind CSS** - Utility-first CSS framework
+  - Custom color palette (pink theme)
+  - Responsive breakpoints
+  - Custom animations and transitions
+- **React Hot Toast** - Toast notification system
 
-2. Update your WhatsApp number in `.env.local`:
-```
-NEXT_PUBLIC_WHATSAPP_NUMBER=your_number_here
-MONGODB_URI=mongodb://localhost:27017/aeloria
-```
+### Backend & Database
+- **MongoDB** - NoSQL database
+  - Collections: users, clothes
+  - Flexible schema for products
+  - Aggregation pipelines for queries
+- **MongoDB Node.js Driver** - Native MongoDB client
+- **Next.js API Routes** - RESTful API endpoints
+  - `/api/auth/*` - Authentication endpoints
+  - `/api/dresses/*` - Product CRUD operations
+  - `/api/user/*` - User data management
 
-3. Run the development server:
-```bash
-npm run dev
-```
+### Authentication System
+- **JWT (jsonwebtoken)** - Token generation and verification
+- **bcryptjs** - Password hashing (10 salt rounds)
+- **js-cookie** - Client-side cookie management
+- **HTTP-only Cookies** - Secure token storage
+- **Role-based Access** - Admin and user roles
+- **Protected Routes** - Middleware for authorization
 
-4. Open [http://localhost:3000](http://localhost:3000)
+### Image Handling
+- **Google Drive API** - Cloud image storage
+- **URL Conversion** - Automatic Drive link to thumbnail format
+- **Next.js Image Component** - Optimized image delivery
+  - Automatic format detection
+  - Responsive sizing
+  - Lazy loading with blur placeholders
+  - CORS handling via Next.js proxy
 
-## Project Structure
+### State Management
+- **React Context API** - Global authentication state
+- **Local State** - Component-level state with useState
+- **Server State** - Real-time data fetching from MongoDB
 
-```
-aeloria/
-├── app/
-│   ├── page.js              # Homepage
-│   ├── layout.js            # Root layout with Navbar & Footer
-│   ├── globals.css          # Global styles
-│   ├── collection/          # Collection page
-│   ├── about/               # About page
-│   ├── contact/             # Contact page
-│   └── dress/[id]/          # Individual dress pages
-├── components/
-│   ├── Navbar.js
-│   ├── Footer.js
-│   ├── Hero.js
-│   ├── FeaturedDresses.js
-│   ├── AboutSection.js
-│   └── WhatsAppButton.js
-├── lib/
-│   ├── dresses.js           # Dress data (placeholder)
-│   └── mongodb.js           # MongoDB connection
-└── public/                  # Static assets
-```
+### Search & Filtering
+- **Client-side Filtering** - Real-time search results
+- **Multi-criteria Search** - Name, category, ID
+- **Smart Sorting** - Numeric and alphabetic ID handling
+- **Category Filtering** - Filter by product type
+- **Sort Options** - Price, name, date sorting
 
-## Customization
+### E-commerce Features
+- **Shopping Cart System**
+  - Add/remove items
+  - Quantity management
+  - Duplicate prevention
+  - Persistent cart in database
+- **Favorites System**
+  - Save products
+  - Quick access to liked items
+- **WhatsApp Integration**
+  - Direct ordering
+  - Address collection modal
+  - Product details in message
 
-### Update WhatsApp Number
-Edit `.env.local` and change `NEXT_PUBLIC_WHATSAPP_NUMBER`
+### Admin Panel
+- **Product Management**
+  - Modal-based CRUD interface
+  - Image upload via Google Drive
+  - Auto-generated descriptions
+  - Unique ID validation
+  - Category management
+- **Real-time Updates** - Changes reflect immediately
+- **Toast Notifications** - Action feedback
 
-### Add/Edit Dresses
-Edit `lib/dresses.js` to modify the dress collection
+### Performance Optimizations
+- **Image Optimization** - AVIF/WebP formats, responsive sizes
+- **Code Splitting** - Dynamic imports for smaller bundles
+- **Compression** - Gzip/Brotli compression enabled
+- **SWC Minification** - Fast JavaScript minification
+- **Caching Strategy** - Image caching (60s TTL)
+- **Loading States** - Skeleton screens for perceived performance
 
-### Styling
-- Colors are defined in `tailwind.config.ts`
-- Fonts: Playfair Display (serif) and Inter (sans-serif)
+### SEO & Social Sharing
+- **Open Graph Tags** - Rich previews on social media
+- **Twitter Cards** - Optimized Twitter sharing
+- **Dynamic Metadata** - Unique meta tags per product
+- **Sitemap.xml** - Auto-generated sitemap
+- **Robots.txt** - Search engine instructions
+- **Structured Data Ready** - Schema.org markup support
 
-## MongoDB Integration
+### Security Features
+- **Password Hashing** - bcrypt with salt rounds
+- **JWT Tokens** - Secure authentication
+- **HTTP-only Cookies** - XSS protection
+- **CORS Configuration** - Controlled cross-origin requests
+- **Input Validation** - Server-side validation
+- **Error Handling** - Graceful error management
 
-The project is set up for MongoDB. To use real data:
+### Development Features
+- **Hot Module Replacement** - Fast development refresh
+- **TypeScript Ready** - Type safety support
+- **Environment Variables** - Secure config management
+- **Error Boundaries** - Graceful error handling
+- **Console Logging** - Debugging support (production-ready)
 
-1. Set up MongoDB locally or use MongoDB Atlas
-2. Update `MONGODB_URI` in `.env.local`
-3. Create API routes to fetch dresses from the database
-4. Replace the static `dresses` array with database queries
+### Deployment
+- **Vercel Platform** - Optimized for Next.js
+- **Serverless Functions** - Auto-scaling API routes
+- **Edge Network** - Global CDN distribution
+- **Automatic HTTPS** - SSL certificates included
+- **Environment Variables** - Secure secrets management
 
-## Deployment
+---
 
-Deploy easily on Vercel:
-
-```bash
-npm run build
-```
-
-Then push to GitHub and connect to Vercel.
-
-## License
-
-© 2025 Aeloria. All rights reserved.
+<div align="center">
+  
+  ### Experience Elegance. Embrace Confidence. Wear Aeloria.
+  
+  Made with 💖 for women who love fashion
+  
+</div>
