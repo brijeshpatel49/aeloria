@@ -117,7 +117,7 @@ export default function CartPage() {
       return;
     }
 
-    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "1234567890";
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9974420398";
     const items = cart.map((item) => `${item.name} x${item.quantity} - ₹${(item.price * item.quantity)}`).join("\n");
     const message = `Hi, I'd like to order:\n\n${items}\n\n*Total: ₹${total}*\n\n📍 *Delivery Address:*\n${address}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

@@ -17,7 +17,7 @@ export default function WhatsAppButton({ dress }) {
       return;
     }
 
-    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "8140085564";
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9974420398";
     const productUrl = `${window.location.origin}/dress/${dress._id}`;
     const message = `Hi, I'm interested in ordering:\n\n*${dress.name}*\nPrice: ₹${dress.price}\nCategory: ${dress.category}\n${dress.id ? `ID: ${dress.id}\n` : ""}\n📍 *Delivery Address:*\n${address}\n\nView Product: ${productUrl}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

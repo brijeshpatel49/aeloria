@@ -34,12 +34,12 @@ export default function ContactPage() {
             <div>
               <h3 className="font-semibold mb-2 text-primary">WhatsApp</h3>
               <a
-                href="https://wa.me/8140085564"
+                href="https://wa.me/9974420398"
                 className="text-accent hover:text-darkPink transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                +91 81400 85564
+                +91 99744 20398
               </a>
             </div>
 

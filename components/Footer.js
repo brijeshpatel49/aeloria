@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Contact</h4>
             <p className="text-sm text-gray-600 mb-2">Email: hello@aeloria.com</p>
-            <p className="text-sm text-gray-600 mb-4">WhatsApp: +91 81400 85564</p>
+            <p className="text-sm text-gray-600 mb-4">WhatsApp: +91 99744 20398</p>
             <div className="flex space-x-4 text-sm">
               <a href="#" className="text-gray-600 hover:text-accent transition">Instagram</a>
               <a href="#" className="text-gray-600 hover:text-accent transition">Facebook</a>
